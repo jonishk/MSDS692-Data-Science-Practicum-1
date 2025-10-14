@@ -1,57 +1,79 @@
-# Medical-Chatbot
+# Reddit Insights Chatbot with RAG
 
-## 📌 Project Overview
+## Project Overview
 
-This project builds and evaluates a medical chatbot using two approaches: Retrieval-Augmented Generation (RAG) and LLM-only. The RAG chatbot grounds its responses in the Gale Encyclopedia of Medicine, while the LLM-only chatbot generates answers without external retrieval.
+This project aims to build a research tool that uses Reddit discussions to surface industry-specific insights, particularly about commonly used software and related pain points in law firms, construction, and tech. Posts and comments are scraped from selected subreddits, cleaned, and analyzed for software/tool mentions. A Retrieval-Augmented Generation (RAG) chatbot will later be developed so users can query insights conversationally. The project also compares RAG performance with an LLM-only baseline.
 
-The systems are compared across three key metrics:
+Key Features:
 
-- Accuracy – correctness of answers to medical questions
+- Reddit Data Collection: Scrapes thousands of posts from selected subreddits using the Pushshift API
 
-- Faithfulness – alignment with retrieved sources
+- Data Cleaning & Filtering: Removes duplicates, irrelevant text, and short posts
 
-- Privacy – safe handling of out-of-scope queries
+- Sentiment Analysis: Uses VADER sentiment scoring to analyze tone around each tool
 
-Findings show that RAG improves reliability and safety by reducing hallucinations and declining to answer out-of-scope questions, whereas LLM-only models are more fluent but risk producing ungrounded or speculative outputs.
+- RAG Chatbot: Combines a retrieval pipeline (Pinecone + HuggingFace embeddings) with OpenAI GPT-3.5-turbo for grounded answers
 
-✅ Final Practicum Submission for **MSDS696 – Data Science Practicum II**  
-🎓 Regis University  
-👨‍💻 Author: Jonish Bishwakarma
+- Evaluation System: Compares RAG vs LLM-only accuracy using precision, recall, and F1-score
 
-## 📂 Dataset
+- Flask Web App: Interactive dashboard with progress logs and chatbot interface
 
-Dataset used: (https://staibabussalamsula.ac.id/wp-content/uploads/2024/06/The-Gale-Encyclopedia-of-Medicine-3rd-Edition-staibabussalamsula.ac_.id_.pdf)
+Project Structure
+├── app.py                     # Flask web app for chatbot and pipeline
+├── evaluate.py                # Script for model evaluation (RAG vs LLM)
+├── data_collection.py         # Reddit data scraping
+├── data_clean.py              # Cleaning and preprocessing
+├── data_sentiment.py          # Sentiment analysis
+├── store_index.py             # Create Pinecone index
+├── static/                    # CSS and JS files
+│   ├── style.css
+│   └── script.js
+├── templates/
+│   └── index.html             # Web interface
+├── questions.json             # Evaluation question set
+├── requirements.txt           # Python dependencies
+├── .env                       # API keys (OpenAI, Pinecone)
+└── README.md
 
+# Installation & Setup
 
-# How to run?
-
-# STEPS:
+# STEPS 01- Clone the repository:
 
 Clone the repository
 
 ```bash
-git clone https://github.com/jonishk/Medibot
+git clone https://github.com/jonishk/MSDS692-Data-Science-Practicum-1
+cd reddit-insights-chatbot
 
 ```
 
-### STEP 01- Create a conda environment after opening the repository
+### STEP 02- Create a conda environment after opening the repository
 
 ```bash
 conda create -n reditbot python=3.10.18 -y
-
-```bash
-conda activate medibot
 ````
-### STEP 02- install requirements
+```bash
+conda activate reditbot
+````
+
+### STEP 03- Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
+### STEP 04- Set up environment variables:
+Create a .env file with your API keys:
+```bash
+OPENAI_API_KEY=your_openai_api_key
+PINECONE_API_KEY=your_pinecone_api_key
 
+```
 ### STEP 04 - run the app using app.py
 ```bash
 python app.py
 ```
 ### STEP 05 - on your browser run:
 ```bash
-localhost:8080
+http://localhost:8080
+```
+
 
