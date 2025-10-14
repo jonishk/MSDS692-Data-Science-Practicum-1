@@ -1,0 +1,44 @@
+# Core data libraries
+pandas
+numpy
+
+# Text processing and NLP
+nltk
+tqdm
+regex
+vaderSentiment
+
+# Web scraping / Reddit API
+requests
+praw
+
+# Machine learning & embeddings
+scikit-learn
+sentence-transformers
+torch
+
+# Vector database
+pinecone-client
+
+# LangChain ecosystem
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-pinecone
+
+# OpenAI API
+openai
+
+# Web app (backend + frontend)
+Flask
+flask-cors
+Werkzeug
+
+# Evaluation and metrics
+scipy
+matplotlib
+seaborn
+
+# Utility
+python-dotenv
