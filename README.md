@@ -19,6 +19,7 @@ Key Features:
 - Flask Web App: Interactive dashboard with progress logs and chatbot interface
 
 Project Structure
+<pre>
 ├── app.py                     # Flask web app for chatbot and pipeline
 ├── evaluate.py                # Script for model evaluation (RAG vs LLM)
 ├── data_collection.py         # Reddit data scraping
@@ -34,6 +35,7 @@ Project Structure
 ├── requirements.txt           # Python dependencies
 ├── .env                       # API keys (OpenAI, Pinecone)
 └── README.md
+</pre>
 
 # Installation & Setup
 
@@ -75,5 +77,6 @@ python app.py
 ```bash
 http://localhost:8080
 ```
+
 
 
