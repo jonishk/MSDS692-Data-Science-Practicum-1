@@ -38,6 +38,7 @@ Project Structure
 ├── requirements.txt           # Python dependencies
 ├── .env                       # API keys (OpenAI, Pinecone)
 └── README.md
+└── project_journey.md         # Project Journey (Online Presence)
 </pre>
 
 # Installation & Setup
@@ -80,6 +81,7 @@ python app.py
 ```bash
 http://localhost:8080
 ```
+
 
 
 
