@@ -1,4 +1,5 @@
 # Reddit Insights Chatbot with RAG
+![simple_header_image_for_reddit_insights_chatbot](https://github.com/user-attachments/assets/b3295c30-c17d-42f2-ac66-4fcbf692ca0a)
 
 ## Project Overview
 
@@ -39,7 +40,7 @@ Project Structure
 
 # Installation & Setup
 
-# STEPS 01- Clone the repository:
+## STEPS 01- Clone the repository:
 
 Clone the repository
 
@@ -77,6 +78,7 @@ python app.py
 ```bash
 http://localhost:8080
 ```
+
 
 
 
