@@ -158,8 +158,10 @@ Data wrangling, NLP, machine learning, evaluation, and user-focused design and a
 
 - **Professor Christy Pearson**, for mentorship and continuous feedback  
 - **MSP Shift**, for providing the real-world context and initial project vision  
-- **LangChain**, **Pinecone**, **HuggingFace**, and **OpenAI**, for the powerful open-source tools that made this project possible  
+- **LangChain**, **Pinecone**, **HuggingFace**, and **OpenAI**, for the powerful open-source tools that made this project possible
+- **Chatbot** design code, nxr-deen. (2024). GitHub - nxr-deen/AI-Chatbot: AI Chatbot in HTML CSS & JavaScript. GitHub. https://github.com/nxr-deen/AI-Chatbot
 
 ---
 
 *Thank you for exploring my project! This repository contains all code, data pipeline scripts, and evaluation results for the Reddit Insights Chatbot with RAG.*
+
