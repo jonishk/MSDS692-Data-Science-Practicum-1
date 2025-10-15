@@ -43,13 +43,13 @@ Project Structure
 
 # Installation & Setup
 
-## STEPS 01- Clone the repository:
+## STEP 01- Clone the repository:
 
 Clone the repository
 
 ```bash
-git clone https://github.com/jonishk/MSDS692-Data-Science-Practicum-1
-cd reddit-insights-chatbot
+git clone https://github.com/jonishk/MSDS692-Data-Science-Practicum-1.git
+cd MSDS692-Data-Science-Practicum-1-main
 
 ```
 
@@ -67,7 +67,7 @@ conda activate reditbot
 pip install -r requirements.txt
 ```
 ### STEP 04- Set up environment variables:
-Create a .env file with your API keys:
+Edit .env file with your API keys:
 ```bash
 OPENAI_API_KEY=your_openai_api_key
 PINECONE_API_KEY=your_pinecone_api_key
@@ -81,6 +81,7 @@ python app.py
 ```bash
 http://localhost:8080
 ```
+
 
 
 
