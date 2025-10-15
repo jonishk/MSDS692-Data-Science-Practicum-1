@@ -1,5 +1,7 @@
 # Reddit Insights Chatbot with RAG
-![simple_header_image_for_reddit_insights_chatbot](https://github.com/user-attachments/assets/b3295c30-c17d-42f2-ac66-4fcbf692ca0a)
+<p align="center">
+  <img src="![simple_header_image_for_reddit_insights_chatbot](https://github.com/user-attachments/assets/b3295c30-c17d-42f2-ac66-4fcbf692ca0a)" width="500" alt="Chatbot Interface Screenshot"/>
+</p>
 
 ## Project Overview
 
@@ -78,6 +80,7 @@ python app.py
 ```bash
 http://localhost:8080
 ```
+
 
 
 
