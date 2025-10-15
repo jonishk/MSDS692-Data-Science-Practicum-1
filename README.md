@@ -5,7 +5,7 @@
 
 ## Project Overview
 
-This project aims to build a research tool that uses Reddit discussions to surface industry-specific insights, particularly about commonly used software and related pain points in law firms, construction, and tech. Posts and comments are scraped from selected subreddits, cleaned, and analyzed for software/tool mentions. A Retrieval-Augmented Generation (RAG) chatbot will later be developed so users can query insights conversationally. The project also compares RAG performance with an LLM-only baseline.
+This project aims to build a research tool that uses Reddit discussions to surface industry-specific insights, particularly about commonly used software and related pain points in law firms, construction, and tech. Posts and comments are scraped from selected subreddits, cleaned, and analyzed for software/tool mentions. A Retrieval-Augmented Generation (RAG) chatbot was developed so users can query insights conversationally. The project also compares RAG performance with an LLM-only baseline.
 
 Key Features:
 
@@ -81,6 +81,7 @@ python app.py
 ```bash
 http://localhost:8080
 ```
+
 
 
 
