@@ -1,6 +1,6 @@
 # Reddit Insights Chatbot with RAG
 <p align="center">
-  <img src="static/reddit_chatbot.png" width="500"/>
+  <img src="static/reddit_chatbot.png"/>
 </p>
 
 ## Project Overview
@@ -81,6 +81,7 @@ python app.py
 ```bash
 http://localhost:8080
 ```
+
 
 
 
